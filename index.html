@@ -1,109 +1,393 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Map Code</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Map Code Website</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Map Code - Fast and Free">
+  <meta name="keywords" content="">
 </head>
-<garena>
-  <h2>Welcome to Map Code Website</h2>
-</garena>
-<map>
-  <server>India:</server>
-  <code>#FREEFIREA6EF9084AD1570A03F57DA6261201C918212</code>
-  
-  
-</map>
-<!---<contact>
-        <section id="contact">
-            <h2>Social Media</h2>
-            <i class="fa-brands fa-youtube" style="color: red"></i>
-            <a href="https://youtube.com/@garena_420?si=nxUupZR030JxSDy7" style="color:#344ceb;" target="_blank">Youtube</a>
-        </section>
-            <i class="fa-brands fa-telegram" style="color: #24A1DE"></i>
-            <a href="https://t.me/garena420" style="color:#344ceb;" target="_blank">Telegram</a>
-        </section>
-</contact>---!>
-<body>
-    <header>
-        <nav class="navbar">
-            <span class="hamburger-btn material-symbols-rounded">menu</span>
-            <a href="#" class="logo">
-                <img src="images/logo.jpg" alt="logo">
-            </a>
-            <ul class="links">
-                <span class="close-btn material-symbols-rounded">close</span>
-                <li><a href="file:///storage/emulated/0/test/Website%20with%20Login%20%26%20Signup%20Form/index.html">Home</a></li>
-                <li><a href="file:///storage/emulated/0/test/Website%20with%20Login%20%26%20Signup%20Form/about.html">About us</a></li>
-                <li><a href="file:///storage/emulated/0/test/Website%20with%20Login%20%26%20Signup%20Form/contact.html">Contact us</a></li>
-            </ul>
-          <!--- <button class="login-btn">LOG IN</button>---!>
-        </nav>
-    </header>
 
-    <div class="blur-bg-overlay"></div>
-    <div class="form-popup">
-        <span class="close-btn material-symbols-rounded">close</span>
-        <div class="form-box login">
-            <div class="form-details">
-                <h2>Welcome Back</h2>
-                <p>Please log in using your personal information to stay connected with us.</p>
-            </div>
-            <div class="form-content">
-                <h2>LOGIN</h2>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" required>
-                        <label>Email</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <a href="#" class="forgot-pass-link">Forgot password?</a>
-                    <button type="submit">Log In</button>
-                </form>
-                <div class="bottom-link">
-                    Don't have an account?
-                    <a href="#" id="signup-link">Signup</a>
-                </div>
-            </div>
-        </div>
-        <div class="form-box signup">
-            <div class="form-details">
-                <h2>Create Account</h2>
-                <p>To become a part of our community, please sign up using your personal information.</p>
-            </div>
-            <div class="form-content">
-                <h2>SIGNUP</h2>
-                <form action="#">
-                    <div class="input-field">
-                        <input type="text" required>
-                        <label>Enter your email</label>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" required>
-                        <label>Create password</label>
-                    </div>
-                    <div class="policy-text">
-                        <input type="checkbox" id="policy">
-                        <label for="policy">
-                            I agree the
-                            <a href="#" class="option">Terms & Conditions</a>
-                        </label>
-                    </div>
-                    <button type="submit">Sign Up</button>
-                </form>
-                <div class="bottom-link">
-                    Already have an account? 
-                    <a href="#" id="login-link">Login</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://devuploads.com/devfiles/css/style.css" />
+</head>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand" href="/">
+<img src="images/img/logo.png">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa-solid fa-grip-lines"></i>
+</button>
+<div class="collapse navbar-collapse" id="main-menu">
+<button class="navbar-toggler position-absolute" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-xmark"></i>
+</button>
+<div class="navbar-nav ml-auto">
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="#">Get Your Own</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div id="container">
+<style>
+    body,
+        html {
+        margin: 0;
+        padding: 0
+    }
+
+    .noselect {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none
+    }
+
+    .nodrag {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none
+    }
+
+    .grad-vert {
+        background: #09206e;
+        background: -moz-linear-gradient(0deg, #0a8cd2 0, #1f4fd0 50%, #09206b 100%);
+        background: -webkit-linear-gradient(0deg, #0a8cd2 0, #1f4fd0 50%, #09206b 100%);
+        background: linear-gradient(0deg, #0a8cd2 0, #1f4fd0 50%, #09206b 100%)
+    }
+
+    .op-50 {
+        opacity: .5
+    }
+
+    .col-teal {
+        color: #00ffd2
+    }
+
+    .shadow-1 {
+        -webkit-box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .6);
+        -moz-box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .6);
+        box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .6)
+    }
+
+    .shadow-2 {
+        -webkit-box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .3);
+        -moz-box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .3);
+        box-shadow: 0 21px 51px -9px rgba(0, 0, 0, .3)
+    }
+
+
+    .banner-lg {
+        position: relative;
+        display: block;
+        height: 9px;
+        width: 100%;
+        z-index: 3;
+        overflow: hidden
+    }
+
+    .banner-lg>.container {
+        z-index: 5
+    }
+
+    .banner-lg>.container>.content {
+        color: #fff;
+        display: block;
+        position: relative;
+        margin-top: 18%
+    }
+
+    .banner-lg>.container>.content>h1 {
+        font-size: 58px;
+        padding: 0;
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        max-width: 600px
+    }
+
+    .banner-lg>.container>.content>p {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        display: block
+    }
+
+    .banner-lg>.container>.content>.btn-group {
+        margin-top: 34px;
+        display: block
+    }
+
+    .banner-lg>.container>.content>.servers {
+        width: 512px;
+        height: 512px;
+        position: relative;
+        float: right;
+        left: 60px;
+        margin-top: -20px;
+        background-image: url(/devfiles/img/devuploads-hero.png);
+        background-size: contain;
+        background-repeat: no-repeat
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px
+    }
+
+    .btn-large {
+        padding: 18px 46px 18px 46px;
+        font-size: 18px;
+        font-weight: 500;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px
+    }
+
+    .btn-grad {
+        background: #00f1c2;
+        background: -moz-linear-gradient(270deg, rgba(0, 241, 194, 1) 0, rgba(23, 181, 226, 1) 50%, rgba(37, 116, 234, 1) 100%);
+        background: -webkit-linear-gradient(270deg, rgba(0, 241, 194, 1) 0, rgba(23, 181, 226, 1) 50%, rgba(37, 116, 234, 1) 100%);
+        background: linear-gradient(270deg, rgba(0, 241, 194, 1) 0, rgba(23, 181, 226, 1) 50%, rgba(37, 116, 234, 1) 100%);
+        background-size: 101% 101%;
+        moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        font-weight: 700
+    }
+
+    a.btn-grad {
+        color: #fff;
+        text-decoration: none
+    }
+
+    .btn-text {
+        moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out
+    }
+
+    .btn-long {
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-right: 16px
+    }
+
+    .btn:hover {
+        color: #fff !important;
+        text-decoration: none
+    }
+
+
+    body {
+        font-family: 'Montserrat', 'sans-serif' !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Montserrat", 'sans-serif';
+    }
+
+    .boldfont {
+        font-weight: 70;
+    }
+
+    .splash-home {
+        margin-top: 50px;
+    }
+
+    .btn {
+        border: none !important;
+    }
+
+    .featuresh {
+        position: relative;
+        margin-top: -100px;
+        z-index: 3;
+        margin-bottom: 30px;
+    }
+
+    .advantagesitem h5 {
+        font-weight: 600;
+        color: #253775;
+    }
+
+    .advantagesicon {
+        height: 100px;
+    }
+
+    @media only screen and (max-width:1200px) {
+        .banner-lg {
+            height: 800px
+        }
+
+
+        .banner-lg>.container>.content>.servers {
+            width: 372px;
+            height: 372px;
+            margin-top: 0
+        }
+    }
+
+    @media only screen and (max-width:992px) {
+        .banner-lg>.container>.content>.servers {
+            width: 356px;
+            height: 356px;
+            margin-top: 80px
+        }
+    }
+
+    @media only screen and (max-width:390px) {
+        .container h2 {
+            font-size: 10px
+        }
+    }
+
+    @media only screen and (min-width:1640px) {
+        .container {
+            max-width: 1380px
+        }
+
+
+        .banner-lg>.container>.content>.servers {
+            width: 598px;
+            height: 568px;
+            right: 0;
+            margin-top: -88px
+        }
+
+        .banner-lg>.container>.content>h1 {
+            font-size: 70px;
+            max-width: 730px
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+
+        .container {
+            padding-left: 34px;
+            padding-right: 34px
+        }
+
+        .banner-lg {
+            position: relative;
+            display: block;
+            height: 720px;
+            width: 100%;
+            z-index: 3;
+            overflow: hidden
+        }
+
+
+        .banner-lg>.container>.content>.servers {
+            display: none
+        }
+
+        .banner-lg>.container>.content {
+            margin-top: 10%
+        }
+
+        .banner-lg>.container>.content>h1 {
+            font-size: 44px
+        }
+    }
+
+    .advantagesitem {
+        border-radius: 10px;
+        box-shadow: 0 50px 50px 0 rgb(5 79 214 / 6%);
+    }
+  .fa-youtube
+  {
+    font-size: 7
+    color: red
+  }
+</style>
+<div class="splash-home">
+<div id="full-wrap">
+
+<div class="banner-lg grad-vert">
+
+<div class="container">
+<div class="content">
+
+<div class="servers">
+</div>
+<gtitle>
+  <h1>Map Code</h1>
+</gtitle>
+<sad>
+  <img src="images/img/map.png"></img>
+</sad>
+  <p>India : #FREEFIRE229473900W3383KEKDSYWI99KS</p>
+  <p>Brazil : #FREEFIRE229473900W3383KEKDSYWI99KS</code>
+</h1>
+  <p></p>
+<h1>Description</h1>  
+  <p1>You Will Get All Evo Gun Skin And Bundles And Many More Free Style Dresses Why You Are Waiting Fast Copy The Code And Play And Enjoy The Map</p1>
+  <p></p>
+<mapfile>
+  <h1>Map File</h1>
+  <a href="#" style="color: red; text-decoration: underline; font-style: italic;">Click here to Download Map File</a>
+</mapfile>  
+
+<p><span class="op-50"></span> <span class="col-teal"></span></p>
+<div class="btn">
+<a ="btn btn-grad btn-long shadow-2 noselect nodrag" href="/upload"></a>
+<a class="btn btn-text" href="#allfeatures" style="color: white;" id="index-more"></a>
+</div>
+</div>
+</div>
+</div> 
+                                        
+<footer class="footer p-5 position-absolute">
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-sm-4">
+<div class="">
+<img src="">
+</div>
+<div class="copyrights">
+© 2024 Garena - All Rights Reserved
+</div>
+<div class="credits">
+Website by Garena for Map Creators
+  <br/> <br/><br/>
+<i class="fa-brands fa-youtube" style="color: red; font-size: 17px;"></i>
+            <a href="https://youtube.com/@garena_420?si=nxUupZR030JxSDy7" style="color:#344ceb; text-decoration: underline" target="_blank">Youtube</a> <br/>
+<i class="fa-brands fa-telegram" style="color: #24A1DE; font-size: 18px"></i>
+            <a href="https://t.me/garena420" style="color:#344ceb; text-decoration: underline" target="_blank">Telegram</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 </body>
 </html>
